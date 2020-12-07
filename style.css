@@ -226,6 +226,8 @@ p {
 .site-footer {
     background-color: #333333;
    color: blanchedalmond;
+   margin: 1rem;
+padding: 2rem;
 }
 
 /*--------------Utilidades con Hover-----------------*/
