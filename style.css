@@ -1,3 +1,20 @@
+/* Notas y Errores
+Error 1.- No comenzar desde el diseño mobil hizo que terminare usando muchas clases de manera repetida 
+      2.- Perder mucho tiempo buscando fondos y temas bonitos
+      3.- Utilizar elementos que no conozco y terminar borrandolos
+      4.- No leer la rubrica hiz que empezara utilizando bootstrap cuando no era necesario
+      5.- No planear bien los tiempo de entrega con el tiempo que tenia disponible
+      6.- No preguntar mis dudas
+      7.- Empezar desorganizadamente
+      ----------------------------------------------------------------------------------------------------------------
+Notas 1.-Cambiar el tamaño del media query sm a 320px hizo que se solucionara el problema del moto g4 en el navegador (preguntar si es correcto)
+      2.-Aprender sobre keyframes para mejorar diseños
+      3.-Preguntar sobre google images y las etiquetas sin la leyenda "con licensia"
+      4.-Preguntar sobre si hay alguna otra opcion para ver el diseño responsive
+      -----------------------------------------------------------------------------------------------------------------*/
+
+
+/*--------------Globales-----------------*/
 html {
     font-family: 'Lobster Two', cursive;
     box-sizing: border-box;
@@ -7,6 +24,7 @@ html {
 h3 {
     margin-top: 0;
     font-size: 3rem;
+    padding-top: 3rem;
 }
 
 span {
@@ -19,20 +37,21 @@ p {
     padding: 0;
 }
 
+/*--------------Navegacion-----------------*/
 .sidenav {
     position: fixed;
-    z-index: 1;
-
+    top: 0;
+    left: 0;
     background-image: url("https://images.pexels.com/photos/196645/pexels-photo-196645.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
     background-size: cover;
     height: 100%;
+
 }
 
 .sidenav nav {
     display: flex;
     flex-direction: column;
     align-items: center;
-
 
 }
 
@@ -44,9 +63,6 @@ p {
 
 }
 
-.sidenav a:hover {
-    color: firebrick;
-}
 
 .sidenav li {
     list-style: none;
@@ -65,10 +81,8 @@ p {
     margin-top: 20%;
 
 }
-.redes:hover {
-    transform: scale(1.10);
-}
 
+/*--------------Utilidades-----------------*/
 .profile-picture {
     border-radius: 160px;
     border: 10px double antiquewhite;
@@ -76,10 +90,15 @@ p {
 
 }
 
+.aling-center {
+    text-align: center;
+    margin: auto;
+
+}
+
 .background-text-color {
     background-image: url("https://img.freepik.com/vector-gratis/pared-ladrillo-blanco-fondo-textura-perfecta_135176-855.jpg?size=626&ext=jpg&ga=GA1.2.1647321586.1601683200");
     background-size: cover;
-  
     margin-bottom: -1rem;
 
 }
@@ -88,12 +107,12 @@ p {
     color: whitesmoke;
     background-image: url("https://images.pexels.com/photos/276514/pexels-photo-276514.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
     background-size: cover;
+    background-position: 0;
     margin-top: -1rem;
 }
 
 .shadow-style a {
     color: #FFFFFF;
-
     text-shadow: 0 -1px 4px rgb(228, 21, 21), 0 -2px 10px rgb(221, 221, 22), 0 -10px 20px #ff8000ce, 0 100px 40px #F00;
 }
 
@@ -111,8 +130,10 @@ p {
 .border-style {
     border: 5px dashed rgba(28, 110, 164, 0.66);
     border-radius: 40px;
- margin: 1rem;
+    margin: 1.5rem;
+    margin-bottom: 0;
 }
+
 
 .link-style {
     border-bottom: 3px solid #fa0b02;
@@ -129,27 +150,31 @@ p {
     background-color: #61a3ff;
     position: absolute;
     left: 0;
-    bottom: -3px; /* this is to match where the border is */
-    transform-origin: left; 
+    bottom: -3px;
+    transform-origin: left;
     transform: scale(0);
     transition: 0.25s linear;
 
-  }
-  
-  .link-style:hover:before {
-    transform: scale(1);
-  }
-.border-style:hover {
-    transform: scale(1.10);
+}
+.btn-style {
+    color: #0099CC;
+    background: transparent;
+    border: 2px solid #ece4e4;
+    border-radius: 6px;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    text-decoration: none;
+    text-transform: uppercase;
 }
 
 
-
-.container:hover .overlay {
-    opacity: 1;
-}
-
-
+/*--------------Principales-----------------*/
 .information {
     display: flex;
     font-size: 13px;
@@ -158,7 +183,6 @@ p {
     border: solid blanchedalmond;
     height: max-content;
     overflow: auto;
-
 
 }
 
@@ -172,11 +196,67 @@ p {
     display: inline-block;
     border: solid blanchedalmond;
 
+}
+.profile-picture {
+    width: 13rem;
+    margin-top: 2rem;
+}
+.contact {
+    border-top: double black;
 
 }
 
+.contact input {
+    color: black;
+    border: solid;
+    margin: 1rem;
+}
 
-/* Media query */
+.service h3 {
+    font-size: 2rem;
+    margin-top: 0;
+}
+
+
+.works {
+    border: 1px solid #B5B5B5;
+    background-color: #F5F5F5;
+    margin-bottom: 1rem;
+}
+.site-footer {
+    background-color: #333333;
+   
+}
+
+/*--------------Utilidades con Hover-----------------*/
+
+.sidenav a:hover {
+    color: firebrick;
+
+}
+
+.link-style:hover:before {
+    transform: scale(1);
+
+}
+
+.border-style:hover {
+    transform: scale(1.10);
+
+}
+
+.redes:hover {
+    transform: scale(1.10);
+
+}
+
+.btn-style:hover {
+    background-color: #008CBA;
+    color: white;
+}
+
+
+/* -----------------Media query------------------ */
 @media only screen and (min-width: 320px) {
     .container {
         width: 36rem;
@@ -201,92 +281,18 @@ p {
         padding-right: 1rem;
         padding-left: 1rem;
     }
-
-    .aling-center {
-        text-align: center;
-        margin: auto;
-
-    }
-
+/* -----------------Navegacion------------------ */
     .sidenav {
         position: relative;
-
+     
     }
 
-    .sidenav li {
-        margin: auto;
-    }
-
-    .redes {
-        margin: auto;
-    }
-
-    .profile-picture {
-        width: 13rem;
-        margin-top: 1rem;
-    }
-
-    .logo {
-        margin: auto;
-    }
-
-    .contact {
-        border-top: double black;
-
-    }
-    .contact input {
-        color: black;
-        border: solid;
-        margin: 1rem;
-    }
 
     .col-sm {
         flex-grow: 1;
         flex-basis: 0;
         max-width: 100%;
     }
-
-    .background-text-color-main {
-        background-position: center;
-        margin-top: 0;
-
-    }
-
-    .btn-style {
-        color: #0099CC;
-        background: transparent;
-        border: 2px solid #ece4e4;
-        border-radius: 6px;
-        color: white;
-        padding: 16px 32px;
-        text-align: center;
-        display: inline-block;
-        font-size: 16px;
-        margin: 4px 2px;
-        transition-duration: 0.4s;
-        cursor: pointer;
-        text-decoration: none;
-        text-transform: uppercase;
-    }
-
-    .btn-style:hover {
-        background-color: #008CBA;
-        color: white;
-    }
-
-    .service h3 {
-        font-size: 2rem;
-        margin-top: 0;
-    }
-    .container-works{
-      display: inline-block;
-    }
-    .works {
-        border: 1px solid #B5B5B5;
-        background-color: #F5F5F5;
-        margin-bottom: 2rem;
-    }
-
     .col-sm-1 {
         flex-basis: 8.333%;
         max-width: 8.333%;
@@ -351,7 +357,7 @@ p {
 
 @media only screen and (min-width: 768px) {
     .container {
-        width: 61rem;
+        width: 65rem;
     }
 
 
@@ -374,31 +380,26 @@ p {
         padding-right: 1rem;
         padding-left: 1rem;
     }
-
+/* -----------------Navegacion------------------ */
     .sidenav {
         position: fixed;
-       
-
     }
-
-   
 
     .logo {
         width: 3rem;
-        
+
     }
 
     .sidenav li {
         writing-mode: vertical-lr;
         transform: rotate(180deg);
         overflow: auto;
-        
+
     }
 
-    .aling-center {
-        margin-left: 8rem;
-    }
-
+  .border-style{
+      height: 26rem; /*Soluciona desbordamiendo en ipad pro*/
+  }
     .col-md {
         flex-grow: 1;
         flex-basis: 0;
@@ -494,17 +495,13 @@ p {
         padding-left: 1rem;
     }
 
-    .redes {
-        margin: 0;
-    }
-
+  /*------------------General----------*/
     .aling-center {
         text-align: center;
-        text-justify: auto;
         margin-left: 22rem;
     }
 
-    .sidenav li {
+    .sidenav li { /*Revierte cambios de pantallas mediana */
         writing-mode: horizontal-tb;
         transform: rotate(0deg);
         margin: 1rem;
@@ -516,21 +513,20 @@ p {
 
     .service {
         display: flex;
-        width: 50rem;
         border-style: solid;
-        margin: -1rem;
+       
 
     }
 
     .service h3 {
         margin: 0;
-        height: 5 rem;
+        height: 5rem;
         text-align: center;
     }
 
     .service p {
-        height: 6rem;
-        margin-bottom: 4rem;
+        height: 10rem;
+        margin: auto;
     }
 
     .col-lg {
