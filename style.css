@@ -204,7 +204,7 @@ p {
 
     .aling-center {
         text-align: center;
-        margin-left: 5rem;
+        margin: auto;
 
     }
 
@@ -214,11 +214,11 @@ p {
     }
 
     .sidenav li {
-        margin-right: 5rem;
+        margin: auto;
     }
 
     .redes {
-        margin-right: 5rem;
+        margin: auto;
     }
 
     .profile-picture {
@@ -227,7 +227,7 @@ p {
     }
 
     .logo {
-        margin-right: 5rem;
+        margin: auto;
     }
 
     .contact {
@@ -377,25 +377,22 @@ p {
 
     .sidenav {
         position: fixed;
-        top: 0;
-        left: 0;
+       
 
     }
 
-    .redes {
-        margin-left: 4.5rem;
-    }
+   
 
     .logo {
         width: 3rem;
-        margin-left: 4.5rem;
+        
     }
 
     .sidenav li {
         writing-mode: vertical-lr;
         transform: rotate(180deg);
         overflow: auto;
-        margin-left: 3rem;
+        
     }
 
     .aling-center {
