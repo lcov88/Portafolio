@@ -1,0 +1,607 @@
+html {
+    font-family: 'Lobster Two', cursive;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+h3 {
+    margin-top: 0;
+    font-size: 3rem;
+}
+
+span {
+    color: #FFFFFF;
+}
+
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.sidenav {
+    position: fixed;
+    z-index: 1;
+
+    background-image: url("https://images.pexels.com/photos/196645/pexels-photo-196645.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    background-size: cover;
+    height: 100%;
+}
+
+.sidenav nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+}
+
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    display: block;
+
+}
+
+.sidenav a:hover {
+    color: firebrick;
+}
+
+.sidenav li {
+    list-style: none;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+.logo {
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+.redes a {
+    display: inline-block;
+    margin-top: 20%;
+
+}
+.redes:hover {
+    transform: scale(1.10);
+}
+
+.profile-picture {
+    border-radius: 160px;
+    border: 10px double antiquewhite;
+    margin-bottom: 1rem;
+
+}
+
+.background-text-color {
+    background-image: url("https://img.freepik.com/vector-gratis/pared-ladrillo-blanco-fondo-textura-perfecta_135176-855.jpg?size=626&ext=jpg&ga=GA1.2.1647321586.1601683200");
+    background-size: cover;
+  
+    margin-bottom: -1rem;
+
+}
+
+.background-text-color-main {
+    color: whitesmoke;
+    background-image: url("https://images.pexels.com/photos/276514/pexels-photo-276514.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    background-size: cover;
+    margin-top: -1rem;
+}
+
+.shadow-style a {
+    color: #FFFFFF;
+
+    text-shadow: 0 -1px 4px rgb(228, 21, 21), 0 -2px 10px rgb(221, 221, 22), 0 -10px 20px #ff8000ce, 0 100px 40px #F00;
+}
+
+.text-style {
+    color: #FFFFFF;
+    font-size: 2rem;
+    text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #49ff18, 0 0 30px #49FF18, 0 0 40px #49FF18, 0 0 55px #49FF18, 0 0 75px #49ff18;
+}
+
+.text-style-title {
+    color: whitesmoke;
+    text-shadow: 2px 2px 0 #bcbcbc, 4px 4px 0 #9c9c9c;
+}
+
+.border-style {
+    border: 5px dashed rgba(28, 110, 164, 0.66);
+    border-radius: 40px;
+ margin: 1rem;
+}
+
+.link-style {
+    border-bottom: 3px solid #fa0b02;
+    font-size: 1em;
+    transition: all 0.25s linear;
+    position: relative;
+}
+
+.link-style:before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #61a3ff;
+    position: absolute;
+    left: 0;
+    bottom: -3px; /* this is to match where the border is */
+    transform-origin: left; 
+    transform: scale(0);
+    transition: 0.25s linear;
+
+  }
+  
+  .link-style:hover:before {
+    transform: scale(1);
+  }
+.border-style:hover {
+    transform: scale(1.10);
+}
+
+
+
+.container:hover .overlay {
+    opacity: 1;
+}
+
+
+.information {
+    display: flex;
+    font-size: 13px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border: solid blanchedalmond;
+    height: max-content;
+    overflow: auto;
+
+
+}
+
+.information img {
+    padding: 1rem;
+    border-bottom: solid blanchedalmond;
+
+}
+
+.information span {
+    display: inline-block;
+    border: solid blanchedalmond;
+
+
+}
+
+
+/* Media query */
+@media only screen and (min-width: 320px) {
+    .container {
+        width: 36rem;
+    }
+
+
+    .col-sm,
+    .col-sm-1,
+    .col-sm-2,
+    .col-sm-3,
+    .col-sm-4,
+    .col-sm-5,
+    .col-sm-6,
+    .col-sm-7,
+    .col-sm-8,
+    .col-sm-9,
+    .col-sm-10,
+    .col-sm-11,
+    .col-sm-12 {
+        box-sizing: border-box;
+        flex: 0 0 auto;
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
+
+    .aling-center {
+        text-align: center;
+        margin-left: 5rem;
+
+    }
+
+    .sidenav {
+        position: relative;
+
+    }
+
+    .sidenav li {
+        margin-right: 5rem;
+    }
+
+    .redes {
+        margin-right: 5rem;
+    }
+
+    .profile-picture {
+        width: 13rem;
+        margin-top: 1rem;
+    }
+
+    .logo {
+        margin-right: 5rem;
+    }
+
+    .contact {
+        border-top: double black;
+
+    }
+    .contact input {
+        color: black;
+        border: solid;
+        margin: 1rem;
+    }
+
+    .col-sm {
+        flex-grow: 1;
+        flex-basis: 0;
+        max-width: 100%;
+    }
+
+    .background-text-color-main {
+        background-position: center;
+        margin-top: 0;
+
+    }
+
+    .btn-style {
+        color: #0099CC;
+        background: transparent;
+        border: 2px solid #ece4e4;
+        border-radius: 6px;
+        color: white;
+        padding: 16px 32px;
+        text-align: center;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        transition-duration: 0.4s;
+        cursor: pointer;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+
+    .btn-style:hover {
+        background-color: #008CBA;
+        color: white;
+    }
+
+    .service h3 {
+        font-size: 2rem;
+        margin-top: 0;
+    }
+    .container-works{
+      display: inline-block;
+    }
+    .works {
+        border: 1px solid #B5B5B5;
+        background-color: #F5F5F5;
+        margin-bottom: 2rem;
+    }
+
+    .col-sm-1 {
+        flex-basis: 8.333%;
+        max-width: 8.333%;
+    }
+
+    .col-sm-2 {
+        flex-basis: 16.667%;
+        max-width: 16.667%;
+    }
+
+    .col-sm-3 {
+        flex-basis: 25%;
+        max-width: 25%;
+    }
+
+    .col-sm-4 {
+        flex-basis: 33.333%;
+        max-width: 33.333%;
+    }
+
+    .col-sm-5 {
+        flex-basis: 41.667%;
+        max-width: 41.667%;
+    }
+
+    .col-sm-6 {
+        flex-basis: 50%;
+        max-width: 50%;
+    }
+
+    .col-sm-7 {
+        flex-basis: 58.333%;
+        max-width: 58.333%;
+    }
+
+    .col-sm-8 {
+        flex-basis: 66.667%;
+        max-width: 66.667%;
+    }
+
+    .col-sm-9 {
+        flex-basis: 75%;
+        max-width: 75%;
+    }
+
+    .col-sm-10 {
+        flex-basis: 83.333%;
+        max-width: 83.333%;
+    }
+
+    .col-sm-11 {
+        flex-basis: 91.667%;
+        max-width: 91.667%;
+    }
+
+    .col-sm-12 {
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+
+}
+
+@media only screen and (min-width: 768px) {
+    .container {
+        width: 61rem;
+    }
+
+
+
+    .col-md,
+    .col-md-1,
+    .col-md-2,
+    .col-md-3,
+    .col-md-4,
+    .col-md-5,
+    .col-md-6,
+    .col-md-7,
+    .col-md-8,
+    .col-md-9,
+    .col-md-10,
+    .col-md-11,
+    .col-md-12 {
+        box-sizing: border-box;
+        flex: 0 0 auto;
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
+
+    .sidenav {
+        position: fixed;
+        top: 0;
+        left: 0;
+
+    }
+
+    .redes {
+        margin-left: 4.5rem;
+    }
+
+    .logo {
+        width: 3rem;
+        margin-left: 4.5rem;
+    }
+
+    .sidenav li {
+        writing-mode: vertical-lr;
+        transform: rotate(180deg);
+        overflow: auto;
+        margin-left: 3rem;
+    }
+
+    .aling-center {
+        margin-left: 8rem;
+    }
+
+    .col-md {
+        flex-grow: 1;
+        flex-basis: 0;
+        max-width: 100%;
+    }
+
+    .col-md-1 {
+        flex-basis: 8.333%;
+        max-width: 8.333%;
+    }
+
+    .col-md-2 {
+        flex-basis: 16.667%;
+        max-width: 16.667%;
+    }
+
+    .col-md-3 {
+        flex-basis: 25%;
+        max-width: 25%;
+    }
+
+    .col-md-4 {
+        flex-basis: 33.333%;
+        max-width: 33.333%;
+    }
+
+    .col-md-5 {
+        flex-basis: 41.667%;
+        max-width: 41.667%;
+    }
+
+    .col-md-6 {
+        flex-basis: 50%;
+        max-width: 50%;
+    }
+
+    .col-md-7 {
+        flex-basis: 58.333%;
+        max-width: 58.333%;
+    }
+
+    .col-md-8 {
+        flex-basis: 66.667%;
+        max-width: 66.667%;
+    }
+
+    .col-md-9 {
+        flex-basis: 75%;
+        max-width: 75%;
+    }
+
+    .col-md-10 {
+
+        flex-basis: 83.333%;
+        max-width: 83.333%;
+    }
+
+    .col-md-11 {
+        flex-basis: 91.667%;
+        max-width: 91.667%;
+    }
+
+    .col-md-12 {
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+
+}
+
+@media only screen and (min-width: 992px) {
+    .container {
+        width: 71rem;
+    }
+
+    .col-lg,
+    .col-lg-1,
+    .col-lg-2,
+    .col-lg-3,
+    .col-lg-4,
+    .col-lg-5,
+    .col-lg-6,
+    .col-lg-7,
+    .col-lg-8,
+    .col-lg-9,
+    .col-lg-10,
+    .col-lg-11,
+    .col-lg-12 {
+        box-sizing: border-box;
+        -ms-flex: 0 0 auto;
+        -webkit-box-flex: 0;
+        flex: 0 0 auto;
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
+
+    .redes {
+        margin: 0;
+    }
+
+    .aling-center {
+        text-align: center;
+        text-justify: auto;
+        margin-left: 22rem;
+    }
+
+    .sidenav li {
+        writing-mode: horizontal-tb;
+        transform: rotate(0deg);
+        margin: 1rem;
+    }
+
+    .logo {
+        width: 7rem;
+    }
+
+    .service {
+        display: flex;
+        width: 50rem;
+        border-style: solid;
+        margin: -1rem;
+
+    }
+
+    .service h3 {
+        margin: 0;
+        height: 5 rem;
+        text-align: center;
+    }
+
+    .service p {
+        height: 6rem;
+        margin-bottom: 4rem;
+    }
+
+    .col-lg {
+        flex-grow: 1;
+        flex-basis: 0;
+        max-width: 100%;
+    }
+
+    .col-lg-1 {
+        flex-basis: 8.333%;
+        max-width: 8.333%;
+    }
+
+    .col-lg-2 {
+        flex-basis: 16.667%;
+        max-width: 16.667%;
+    }
+
+    .col-lg-3 {
+        flex-basis: 25%;
+        max-width: 25%;
+    }
+
+    .col-lg-4 {
+        flex-basis: 33.333%;
+        max-width: 33.333%;
+    }
+
+    .col-lg-5 {
+        flex-basis: 41.667%;
+        max-width: 41.667%;
+    }
+
+    .col-lg-6 {
+        flex-basis: 50%;
+        max-width: 50%;
+    }
+
+    .col-lg-7 {
+        flex-basis: 58.333%;
+        max-width: 58.333%;
+    }
+
+    .col-lg-8 {
+        flex-basis: 66.667%;
+        max-width: 66.667%;
+    }
+
+    .col-lg-9 {
+
+        flex-basis: 75%;
+        max-width: 75%;
+    }
+
+    .col-lg-10 {
+
+        flex-basis: 83.333%;
+        max-width: 83.333%;
+    }
+
+    .col-lg-11 {
+
+        flex-basis: 91.667%;
+        max-width: 91.667%;
+    }
+
+    .col-lg-12 {
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+}

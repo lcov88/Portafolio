@@ -5,163 +5,222 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,900&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
+
 </head>
 
 <body>
     <!---Navigation section-->
-    <nav class="navigation" id="home">
-        <img src="./img/code-solid.svg" width="100" height="100" alt="logo">
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#portafolio">Portafolio</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-        <img src="./img/Social-img/facebook-f-brands.svg" alt="Facebook" width="20" height="20">
-        <img src="./img/Social-img/github-square-brands.svg" alt="Github" width="20" height="20">
-        <img src="./img/Social-img/instagram-brands.svg" alt="instagram" width="20" height="20">
-        <img src="./img/Social-img/linkedin-brands.svg" alt="Linkedin" width="20" height="20">
-    </nav>
+    <div class="sidenav col-sm-12 col-md-1 col-lg-10">
+        <nav>
+            <img class="logo" src="./img/code-optimization_icon-icons.com_53810.svg" width="100" height="100"
+                alt="logo">
+            <ul class="shadow-style">
 
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portafolio">Portafolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="redes">
+                <a href="#"><img src="./img/Social-img/facebook-f-brands.svg" alt="Facebook" width="30" height="30"></a>
+                <a href="#"><img src="./img/Social-img/github-square-brands.svg" alt="Github" width="30"
+                        height="30"></a>
+                <a href="#"><img src="./img/Social-img/instagram-brands.svg" alt="instagram" width="30" height="30"></a>
+                <a href="#"><img src="./img/Social-img/linkedin-brands.svg" alt="Linkedin" width="30" height="30"></a>
+            </div>
+        </nav>
+    </div>
     <!-- Presentetion section -->
     <section>
-        <div>
-            <img src="./img/profile.jpeg" alt="Profile picture">
-            <h3>Luis</h3>
-            <span>Covarrubias</span>
-            <p>Web development</p>
+        <div id="home" class="background-text-color-main">
+            <div class="col-sm-9 col-md-8 col-lg-8 aling-center">
+                <img class="profile-picture" src="./img/profile.jpeg" alt="Profile picture">
+                <h3 class="text-style-title">Hello World Im</h3>
+                <span class="text-style">Luis Covarrubias</span>
+                <p>Im a Web Developer</p>
+                <h3>About me</h3>
+                <img class="profile-picture" src="./img/Biography.jpeg" alt="Biography picture">
 
-        </div>
-    </section>
+                <p>Hi my name is Luis and im web development
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est consequuntur ipsum obcaecati, qui,
+                    repellendus
+                    laborum impedit amet dignissimos, corrupti fugiat reprehenderit inventore dicta quia odio recusandae
+                    aut
+                    sunt
+                    optio itaque?
+                </p>
+                <div class="information">
+                    <div><img src="./img/Birthday-80_icon-icons.com_57369.svg" alt="Birthday" width="30" height="30">
+                        <span>Birthday: 24/sep/1996</span></div>
 
-    <!-- Biography section -->
-    <section id="about">
-        <span>Biography</span>
-        <h3>About me</h3>
-        <img src="./img/Biography.jpeg" alt="Biography picture">
-        <h3>Im Luis Covarrubias and im web development</h3>
-        <p>Hi my name is Luis and im web development
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est consequuntur ipsum obcaecati, qui, repellendus
-            laborum impedit amet dignissimos, corrupti fugiat reprehenderit inventore dicta quia odio recusandae aut
-            sunt
-            optio itaque?
-        </p>
-        <div>
-            <img src="./img/birthday-cake-solid.svg" alt="Birthday" width="20" height="20">
-            <label for="Birthday">Birthday:</label>
-            <span>24/sep/1996</span>
-            <img src="./img/calendar-day-solid.svg" alt="Calendar" width="20" height="20">
-            <label for="Age">Age</label>
-            <span>24 years old</span>
-            <img src="./img/graduation-cap-solid.svg" alt="Study" width="20" height="20">
-            <label for="study">Study</label>
-            <span>Universidad de Colima & Academlo</span>
-            <img src="./img/play-circle-regular.svg" alt="Interests" width="20" height="20">
-            <label for="Interests">Interests</label>
-            <span>Play music</span>
-            <img src="./img/envelope-open-text-solid.svg" alt="Mail" width="20" height="20">
-            <label for="Mail">Mail</label>
-            <span>lcov88@outloo.es</span>
-            <img src="./img/mobile-alt-solid.svg" alt="Mobile" width="20" height="20">
-            <label for="Mobile">Mobile phone</label>
-            <span>+52 3121048711</span>
-            <div>
-                <button>Download CV</button>
-                <button>Send Message</button>
+                    <div><img src="./img/user_kids_avatar_user_profile_icon_149314.svg" alt="Calendar" width="30"
+                            height="30">
+
+                        <span>Age: 24 years old</span></div>
+                    <div><img src="./img/1486503771-book-books-education-library-reading-open-book-study_81275.svg"
+                            alt="Study" width="30" height="30">
+
+                        <span>Study: Universidad de Colima & Academlo</span></div>
+                    <div><img src="./img/video-game-play-pad-boy-gameboy-nintendo_108539.svg" alt="Interests" width="30"
+                            height="30">
+
+                        <span>Interests: Play music</span></div>
+                    <div> <img src="./img/medical-25_icon-icons.com_73900.svg" alt="Mail" width="30" height="30">
+
+                        <span> Mail: lcov88@outloo.es</span></div>
+                    <div><img src="./img/1497619669-androidmobile-phone_85137.svg" alt="Mobile" width="30" height="30">
+
+                        <span> Mobile phone: +52 3121048711 </span>
+                    </div>
+
+                </div>
+                <div>
+
+                    <button class="btn-style">Download CV</button>
+                    <button class="btn-style">Send Message</button>
+                </div>
+
+
             </div>
-        </div>
+
     </section>
     <!-- Services -->
+
     <section id="services">
-        <span>Services</span>
-        <h3>What i do</h3>
-        <div class="inner">
-            <img src="./img/Services-img/iconfinder_30_5955423.svg" alt="web development" height="80" width="80">
-            <h3>Web development</h3>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet sequi placeat ullam odio earum
-                accusantium
-                laborum nemo culpa quibusdam, ipsa porro quae optio dolores numquam consectetur voluptatibus nisi
-                molestiae
-                quas.</p>
-        </div>
-        <div class="inner">
-            <img src="./img/Services-img/iconfinder_58-like_4202086.svg" alt="Social media" width="80" height="80">
-            <h3>Social media</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, cum possimus eaque magni, incidunt
-                laudantium quisquam soluta voluptas non amet autem commodi molestiae impedit nobis ad. Minus animi
-                reprehenderit facilis.</p>
-        </div>
-        <div class="inner">
-            <img src="./img/Services-img/iconfinder_Internet_Security_Finger_print_identity_crime_fingerprint_5172975.svg"
-                alt="Brand Identify" height="80" width="80">
-            <h3>Brand identify</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia dolor ut illo impedit repellendus
-                veritatis
-                necessitatibus quo facere voluptates, suscipit, unde saepe volu ptatem praesentium sed eaque est,
-                ipsam
-                perspiciatis cupiditate.</p>
-        </div>
-        <div class="inner">
-            <img src="./img/Services-img/iconfinder_Light_669950.svg" alt="cretive design" height="80" width="80">
-            <h3>Creative design</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta numquam vel dolores esse minima
-                quisquam
-                totam natus, ex autem hic odio itaque repellat! Eius similique omnis, aut facilis iste voluptatibus?
-            </p>
+        <div class="background-text-color">
+            <div class="aling-center col-sm-9 col-md-8 col-lg-7">
+                <h3>What i do</h3>
+                <div class="service">
+                    <div>
+                        <div class="border-style">
+                            <img src="./img/Services-img/iconfinder_30_5955423.svg" alt="web development" height="80"
+                                width="80">
+                            <h3>Web development</h3>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet sequi placeat ullam odio
+                                earum
+                                accusantium
+                                laborum nemo culpa quibusdam, ipsa porro quae optio dolores numquam consectetur
+                                voluptatibus
+                                nisi
+                                molestiae
+                                quas.</p>
+                        </div>
+                        <div class="border-style">
+                            <img src="./img/Services-img/iconfinder_58-like_4202086.svg" alt="Social media" width="80"
+                                height="80">
+                            <h3>Social media</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, cum possimus eaque
+                                magni,
+                                incidunt
+                                laudantium quisquam soluta voluptas non amet autem commodi molestiae impedit nobis ad.
+                                Minus
+                                animi
+                                reprehenderit facilis.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="border-style">
+                            <img src="./img/Services-img/iconfinder_Internet_Security_Finger_print_identity_crime_fingerprint_5172975.svg"
+                                alt="Brand Identify" height="80" width="80">
+                            <h3>Brand identify</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia dolor ut illo impedit
+                                repellendus
+                                veritatis
+                                necessitatibus quo facere voluptates, suscipit, unde saepe volu ptatem praesentium sed
+                                eaque
+                                est,
+                                ipsam
+                                perspiciatis cupiditate.</p>
+                        </div>
+                        <div class="border-style">
+                            <img src="./img/Services-img/iconfinder_Light_669950.svg" alt="cretive design" height="80"
+                                width="80">
+                            <h3>Creative design</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta numquam vel dolores esse
+                                minima
+                                quisquam
+                                totam natus, ex autem hic odio itaque repellat! Eius similique omnis, aut facilis iste
+                                voluptatibus?
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
     <!-- Portafolio -->
     <section id="portafolio">
-        <span>Portafolio</span>
-        <h3>Featured Works</h3>
-        <img src="https://cdn.pixabay.com/photo/2016/11/19/14/00/code-1839406__340.jpg" alt="web work">
-        <img src="https://cdn.pixabay.com/photo/2017/07/31/14/45/code-2558220__340.jpg" alt="web work 2">
-        <img src="https://cdn.pixabay.com/photo/2015/02/24/02/05/website-647013__340.jpg" alt="web work 3">
-        <div class="quotes">
-            <blockquote>
-                <q> Lorem ipsum dolor sit amet consectetur adipisicing elit. At voluptatem ipsa eum voluptas enim
-                    rerum dolores cumque dolor facilis nam. Eos praesentium perspiciatis similique vel blanditiis
-                    alias.
-                    Aperiam, accusantium laudantium.</q>
-                <div class="Autor-data">
-                    <img src="https://cdn.pixabay.com/photo/2017/09/25/13/12/man-2785071_960_720.jpg"
-                        alt="autor data img" height="100" width="100">
-                    <span>Juan Marques</span>
-                    <span>Freelancer</span>
+        <div class="background-text-color">
+            <div class="aling-center col-sm-9 col-md-8 col-lg-8">
+
+
+                <h3>Featured Works</h3>
+
+                <div class="container-works">
+                    <div class="works">
+                        <img src="https://miro.medium.com/max/3060/1*rGiHBnlqf6-koapA2DzUoA.jpeg" alt="Proyect X"
+                            width="100" height="100">
+                        <h3>Proyect X</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis magni minima ab atque,
+                            excepturi pariatur omnis voluptatum modi quibusdam ratione nihil beatae culpa autem
+                            temporibus deleniti mollitia nemo nisi tempore.</p>
+                        <a class="link-style" href="#" class="btn-style">view proyect</a>
+                    </div>
+
+                    <div class="works">
+                        <img src="https://miro.medium.com/max/12000/0*tQQ7SLPOJfxaG4ZY " width="100" height="100"
+                            alt="Proyect Y">
+
+                        <h3>Proyect Y</h3>
+                        <p>Casa con diseño moderno, así como tecnología inteligente y amueblada</p>
+                        <a class="link-style" href="#" class="">view proyect</a>
+                    </div>
+
+
+                    <div class="works">
+                        <img src="https://files.expub.net/Content/Archive/47/programe-455497.jpg" width="100"
+                            height="100" alt="Proyect Z">
+                        <h3>Proyect Z</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet nisi, rerum beatae
+                            eligendi tenetur placeat deserunt aspernatur illo, consectetur praesentium nemo,
+                            delectus consequatur dolores. Accusantium officia voluptas quo necessitatibus sunt!</p>
+
+                        <a class="link-style" href="#" class="">view proyect</a>
+
+                    </div>
                 </div>
-            </blockquote>
-            <div class="working perdiod">
-                <span>2020 - current</span>
-                <img src="https://www.academlo.com/logo_academlo.png" alt="academlo logo" height="100" width="200">
-                <span>Full stack developer</span>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae autem, aliquam unde quod
-                    laudantium harum deserunt quo minima rem consectetur. Harum autem maiores eligendi nostrum velit
-                    non
-                    sint animi laudantium.</p>
             </div>
         </div>
+
     </section>
     <!-- Contact -->
     <section id="contact">
-        <span>Contact</span>
-        <h3>Get in touch</h3>
+        <div class="background-text-color contact">
+            <div class="col-sm-7 col-md-7 col-lg-7 aling-center">
 
-        <p>Please fill out the form on this section to contact with me. Or call between 9:00 a.m. and 8:00 p.m. ET,
-            Monday through Friday</p>
-        <form action="index.html" method="get">
-            <label form="name">Name:</label>
-            <input name="name" type="text">
-            <label form="email">Email:</label>
-            <input name="email" type="text">
-            <label form="Message">Message:</label>
-            <input name="Message" type="text">
+                <h3>Get in touch</h3>
 
-            <input type="submit" value="Send">
-        </form>
+                <p>Please fill out the form on this section to contact with me. Or call between
+                    9:00 a.m. and 8:00 p.m. ET,
+                    Monday through Friday</p>
+                <form action="index.html" method="get">
+                    <div> <label form="name">Name:</label>
+                        <input name="name" type="text">
+                        <label form="email">Email:</label>
+                        <input name="email" type="text"></div>
+                    <div> <label form="Message">Message:</label>
+                        <input name="Message" type="text">
+                        <input class="btn-style" type="submit" value="Send"></div>
+                </form>
     </section>
+    </div>
+    </div>
+
+
 </body>
 
 </html>
