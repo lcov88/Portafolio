@@ -223,6 +223,11 @@ p {
     background-color: #F5F5F5;
     margin-bottom: 1rem;
 }
+.works img {
+    margin: 1rem;
+    border: dashed black;
+    border-radius: 30px;
+}
 .site-footer {
     background-color: #333333;
    color: blanchedalmond;
